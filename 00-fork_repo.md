@@ -55,6 +55,6 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Technically, :bigllama: :bananalama: but they aren't on the sheet, so will go with :boom: 
 
 
