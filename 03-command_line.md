@@ -204,7 +204,7 @@ What does `xargs` do? Give an example of how to use it.
 > > this in conjunction with other commands can help your scripts.
 
 > > Example:
-> > The script below will will copy your current path to the clipboard, you can then go to another target terminal window and paste with \<cmd\>V and you will then have changed to the same directory as the original directory in the source terminal window that you ran the command in:
+> > The script below will will copy your current path to the clipboard, you can then go to another target terminal window and paste with `<cmd>V` and you will then have changed to the same directory as the original directory in the source terminal window that you ran the command in:
 
 > > `#!/bin/sh`
 
