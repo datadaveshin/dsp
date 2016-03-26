@@ -55,9 +55,9 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > I use this in scripts to append to files,
 > > never used it on the command line. 
 
-> > 9) find . -name "*.txt" -print | less
-> > find . -name "*.txt" -print 
-> > find . -name "*.txt"
+> > 9) find . -name "\*.txt" -print | less
+> > find . -name "\*.txt" -print 
+> > find . -name "\*.txt"
 
 > > find is used to search for files. 
 > > Note, it appears that the -print here is not needed on my machine,
@@ -67,9 +67,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > find /home/user3131/ -name "log.???"
 
 > > 10) cat \> file
+
 > >     text
-> >     text 
+
 > >     text
+ 
+> >     text
+
 > >     \<ctrl\>D
 
 > > Way to insert text into a filei.
