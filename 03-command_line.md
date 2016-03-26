@@ -48,7 +48,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > 7) cat \< filename
 
 > > Supply input to the preceding command.  
-> > Likewise \> will output to a file
+> > Likewise \> will output to a file.
 
 > > 8) \>\>
 
@@ -138,25 +138,25 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > ls outputs to stdout the standard "view" of a list of all contents of adirectory
+> > ls outputs to stdout the standard "view" of a list of all contents of a directory.
 
-> > ls -a is ls but shows hidden files (those that are preceded by dot)
+> > ls -a is ls but shows hidden files (those that are preceded by dot).
 
 > > ls -l lists in one column, by alphanumeric order of file/directory names,
 > > it will also show the permissions, owner, timestamps, filesizes...
 
 > > ls -lh same as ls -l except for filesizes, uses strings B, KB, MB, etc.
-> > to reduce having huge number of numeric characters
+> > to reduce having huge number of numeric characters.
 
-> > ls -lah same as above but shows hidden files
+> > ls -lah same as above but shows hidden files.
 
-> > ls -t same as ls, but sorts by time, newest files first
+> > ls -t same as ls, but sorts by time, newest files first.
 
 > > ls -Glp Here, the 'G' changes the output to color, 
 > > where 'regular' files remain the same color, 
 > > but hidden files, executable files, directories will be 
 > > colored differently. The 'l' we have discussed already, 
-> > output will be in a line. The 'p' adds a '/' after the directories  
+> > output will be in a line. The 'p' adds a '/' after the directories. 
 
 ---
 
@@ -164,18 +164,18 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > The first two I list are the ones I use the most 
+> > The first two I list are the ones I use the most. 
 > > (I think this will hold true after reading the article), 
 > > then some new combos that may be useful:
 
 > > 1) ls -lrt or ls -lrtFG 
 
 > > This outputs in single column format with the most recent file at the bottom
-> > so that it is near your prompt
+> > so that it is near your prompt.
 
 > > 2) ls -al 
 
-> > I prefer the single column format most of the time, and hidden files will be up at the top
+> > I prefer the single column format most of the time, and hidden files will be up at the top.
 
 > > 3) ls -1
 
@@ -186,12 +186,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 > > 4) ls -m 
 
-> > Lists files in a comma-space delimited list
+> > Lists files in a comma-space delimited list.
 > > ls -m | sed 's/ //g' could be useful for scripting and making .csv files
 
 > > 5) ls -d 
 > > lists only directories, but doesn't work on the machine I'm using,
-> > despite being in man ls
+> > despite being in man ls.
 
 ---
 
