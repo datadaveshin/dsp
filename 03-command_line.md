@@ -43,21 +43,21 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > 6) using `spacebar` for more/less commands
 
-> > The spacebar will page down similar to \<ctrl\>F.
+> > The spacebar will page down similar to `<ctrl>F`.
 
-> > 7) `cat \< filename`
+> > 7) `cat < filename`
 
 > > Supply input to the preceding command.  
-> > Likewise `\>` will output to a file.
+> > Likewise `>` will output to a file.
 
-> > 8) `\>\>`
+> > 8) `>>`
 
 > > I use this in scripts to append to files,
 > > never used it on the command line. 
 
-> > 9) `find . -name "\*.txt" -print | less`
-> > `find . -name "\*.txt" -print` 
-> > `find . -name "\*.txt"`
+> > 9) `find . -name "*.txt" -print | less`
+> > `find . -name "*.txt" -print` 
+> > `find . -name "*.txt"`
 
 > > `find` is used to search for files. 
 > > Note, it appears that the `-print` here is not needed on my machine,
@@ -66,11 +66,11 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > The dot is to start at the current directory, but you can use specify another:
 > > `find /home/user3131/ -name "log.???"`
 
-> > 10) `cat \> file`
+> > 10) `cat > file`
 > >     `text`
 > >     `text`
 > >     `text`
-> >     `\<ctrl\>D`
+> >     `<ctrl>D`
 
 > > Way to insert text into a file.
 > > I would probably use vi though.
@@ -99,9 +99,9 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > `grep -z` or `zgrep`
 > > Acts on compressed files.
 
-> > 12) `apropos \<search term\>`
+> > 12) `apropos <search term>`
 
-> > `apropos` is some weird help search function to match you 
+> > `apropos` seems to be a pre-internet search engine help search function to match you 
 > > with an appropriate command.
 > > Likely hard to remember due to infrequency of use.
 
@@ -206,6 +206,6 @@ What does `xargs` do? Give an example of how to use it.
 > > Example:
 > > The script below will will copy your current path to the clipboard, you can then go to another target terminal window and paste with \<cmd\>V and you will then have changed to the same directory as the original directory in the source terminal window that you ran the command in:
 
-> > `\#!/bin/sh`
+> > `#!/bin/sh`
 
-> > `echo cd \`pwd | xargs\` | xargs | pbcopy`
+> > `echo cd `pwd | xargs` | xargs | pbcopy`
