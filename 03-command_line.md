@@ -191,7 +191,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 > > 5) `ls -d` 
 > > lists only directories, but doesn't work on the machine I'm using,
-> > despite being in man ls.
+> > despite being in `man ls`.
 
 ---
 
@@ -201,7 +201,7 @@ What does `xargs` do? Give an example of how to use it.
 
 > > xargs takes in input (x number of arguments) from stdin, 
 > > then echo's it back,
-> > this in conjunction with other commands can help your scripts
+> > this in conjunction with other commands can help your scripts.
 
 > > Example:
 > > The script below will will copy your current path to the clipboard, you can then go to another target terminal window and paste with \<cmd\>V and you will then have changed to the same directory as the original directory in the source terminal window that you ran the command in:
