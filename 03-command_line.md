@@ -66,17 +66,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > The dot is to start at the current directory, but you can use specify another:
 > > find /home/user3131/ -name "log.???"
 
-> > 10) cat \> file
-
-> >     text
-
-> >     text
- 
-> >     text
-
+> > 10) cat \> file \n
+> >     text \n
+> >     text \n
+> >     text \n
 > >     \<ctrl\>D
 
-> > Way to insert text into a filei.
+> > Way to insert text into a file.
 > > I would probably use vi though.
 
 > > 11) grep -i 
