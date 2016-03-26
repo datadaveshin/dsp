@@ -13,9 +13,9 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > 1) mkdir -p <dirname1>/<dirname2>/<dirname3>
+> > 1) mkdir -p dirname1/dirname2/dirname3
 
-> > Allows you to make intemediate directories that have yet to be created
+> > Allows you to make intemediate directories that have yet to be created.
 
 > > 2) mkdir "this is a directory with spaces" or
 > > cd "this is a directory with spaces"
@@ -23,109 +23,95 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > Using quotes allows you to make directories with spaces,
 > > though I have no idea why you would want to ever do this.
 > > Same for cd to change directories to directories with spaces, 
-> > this allows to not have to use escape characters
-> > cd this\ is\ a\ directory\ with\ spaces  
+> > this allows to not have to use escape characters.
 
 > > 3) ls -R 
 
-> > See what's in the directory and its subdirectories recursively
+> > See what's in the directory and its subdirectories recursively.
  
 > > 4) pushd and popd
 
-> > pushd adds a directory to a stack, then moves to that directory
-> > popd pops the highest directory in the stack, then moves to that directory
+> > pushd adds a directory to a stack, then moves to that directory.
+> > popd pops the highest directory in the stack, then moves to that directory.
 > > pushd without an argument will go back and forth betweent the top two items 
-> > in the stack
-> > dirs -c will clear the stack (useful if a directory no longer exists)
+> > in the stack.
+> > dirs -c will clear the stack (useful if a directory no longer exists).
 
 > > 5) touch for bash shell
 
-> > Makes an empty file, sometimes useful for scripts, not sure what it's
-> > use would be otherwise
+> > Makes an empty file, sometimes useful for scripts.
 
 > > 6) using spacebar for more/less commands
 
-> > The spacebar will page down similar to <ctrl>F
+> > The spacebar will page down similar to \<ctrl\>F.
 
-> > 7) cat < filename
+> > 7) cat \< filename
 
-> > I'm pretty used to supplying input/output this way: 
-> > doit < myfile > doit.out
+> > Supply input to the preceding command.  
+> > Likewise \> \<filename\> will output to a file
 
-> > I just thought it was funny seeing it for just input
-> > as opposed to just:
-> > cat filename
+> > 8) \>\>
 
-> > I should note it though, could be handy
-
-> > 8) >>
-
-> > I use this in scripts all the time to append to files,
-> > never thought of using it on the command line, 
-> > kind of dumb on my end
+> > I use this in scripts to append to files,
+> > never used it on the command line. 
 
 > > 9) find . -name "*.txt" -print | less
 > > find . -name "*.txt" -print 
 > > find . -name "*.txt"
 
-> > I always sucked at using find, it was probably the -name and quotes
-> > The -print doesn't appear to be needed
+> > find is used to search for files. 
+> > Note, it appears that the -print here is not needed on my machine,
+> > so the third example is likely the most useful.
+
 > > The dot is to start at the current directory, but you can use specify another:
 > > find /home/user3131/ -name "log.???"
 
-> > 10) cat > file
+> > 10) cat \> file
 > >     text
 > >     text 
 > >     text
-> >     <ctrl>D
+> >     \<ctrl\>D
 
-> > Way to insert text into a file
-> > I would probably use vi though
+> > Way to insert text into a filei.
+> > I would probably use vi though.
 
 > > 11) grep -i 
-> > flag will ignore case
+> > Flag will ignore case.
 
 > > grep -A 2
-> > -A flag will show x lines after 
+> > -A flag will show x lines after. 
 
 > > grep -B 3
-> > -B flag will show x lines before
+> > -B flag will show x lines before.
 
 > > grep -C 2
-> > -C flag will show around a number
+> > -C flag will show around a number.
 
 > > ls -lrt | grep -o 'drwxr-xr-x'
-> > -o flag only prints the matching part within the lines
+> > -o flag only prints the matching part within the lines.
 
 > > grep -r
-> > will work recursively through subdirectories
+> > Will work recursively through subdirectories.
 
 > > grep -x
-> > entire line must match the input string or re
+> > Entire line must match the input string or re.
 
 > > grep -z or zgrep
-> > acts on compressed files
+> > Acts on compressed files.
 
-> > 12) apropos command
+> > 12) apropos \<search term\>
 
-> > apropos is some weird help search function, I think Scott showed me this,
-> > but I wouldn't remember it because of infrequency of use
+> > apropos is some weird help search function to match you 
+> > with an appropriate command.
+> > Likely hard to remember due to infrequency of use.
 
 > > 13) env
-> > Show's what's in my environment
-> > Found that anaconda put itself first in my path, not sure if I should
-> > reconfigure this and use aliases for python distributions
+> > Show's what's in my environment.
 
 > > 14)export TESTING='1,2,3'
 > > echo $TESTING
 
-> > how to set a variable in the bash shell, again laughing cause
-> > I would do this in a script, and not think about it on the actual
-> > command line
-
-> > To note, this ends up in your environment:
-> > $ env | grep TESTING
-> > TESTING=1 2 3
+> > How to set a an env variable in the bash shell.
 
 > > 15) $ export TESTING="bada bada bing"
 > > $ echo $TESTING
@@ -133,12 +119,11 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > $ unset TESTING
 > > $ echo $TESTING
 
-> > Ok, I get it export is to set environment variables
-> > and also, you have to 'unset' it to get rid of it
+> > You have to 'unset' env variables to get rid of them.
 
 > > 16) cd -
 
-> > changes directory to previous directory stored as env variable OLDPWD
+> > Changes directory to previous directory stored as env variable OLDPWD.
 
 ---
 
