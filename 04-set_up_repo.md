@@ -127,7 +127,7 @@ The message should be descriptive enough, but also short and sweet. It is strong
 
 **5d. `git push`** 
 
-Once you're done with the challenge, it's time to show your work in your remote GitHub repository. Let's `git push`.
+Once you're done with the challenge, it's time to show your work in your remote GitHub repository. Let's `git push origin master`.
 
 ![push](img/git_push.png)
 
