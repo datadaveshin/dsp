@@ -212,5 +212,5 @@ after you run it, you can then go to another terminal and paste
 with <cmd>V and you will then have changed to the same directory
 as the directory that you ran the command in:
 
-> > #!/bin/sh
+> > \#!/bin/sh
 > > echo cd `pwd | xargs` | xargs | pbcopy
