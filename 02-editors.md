@@ -59,10 +59,9 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> 
-1) vi/vim.  
+>> 1) vi/vim.  
 
-2) I've used it for years, it's my favorite. 
+>> 2) I've used it for years, it's my favorite. 
 
 --
 
@@ -70,20 +69,19 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> 
-1) Probably sublime text.
+>> 1) Probably sublime text.
   
-2) I've tried IEP and word wrangler. IEP allows you to run your code in the window, but I kind of prefer to just do that in the terminal. Word wrangler is ok. I just happened to take a class that used sublime text recently, and kept using it.
+>> 2) I've tried IEP and word wrangler. IEP allows you to run your code in the window, but I kind of prefer to just do that in the terminal. Word wrangler is ok. I just happened to take a class that used sublime text recently, and kept using it.
   
-3)  What I like best (but don't know if it's a feature on the others), is being able to split the screen on the same file. That's pretty key for me.
+>> 3)  What I like best (but don't know if it's a feature on the others), is being able to split the screen on the same file. That's pretty key for me.
   
 4) These are pretty basic, but helpful:
-<ctrl><cmd><up/down> to move blocks of selected text up and down
-<cmd></> to comment/uncomment lines
-<cmd><]> and <cmd><[> to shift blocks of code right and left.
+`<ctrl><cmd><up/down>` to move blocks of selected text up and down,
+`<cmd></>` to comment/uncomment lines,
+`<cmd><]>` and `<cmd><[>` to shift blocks of code right and left.
  
-5) Sublime text is pretty customizable: 
-a) There are settings you can change with text files, you can open it up from the menu, or just go here: /Users/<yourusername>/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings for sublime text 3 running on OS X 10.11. 
-b) Keybindings you can add yourself. 
-c) Plugins.    
+>>5) Sublime text is pretty customizable: 
+>>a) There are settings you can change with text files, you can open it up from the menu, or just go here: /Users/<yourusername>/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings for sublime text 3 running on OS X 10.11. 
+>>b) Keybindings you can add yourself. 
+>>c) Plugins.    
  
