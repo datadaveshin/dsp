@@ -49,7 +49,7 @@ Did you install Python 2 or 3? Why?
 >>1) I have anaconda installations of both. I started with Python 2, but you can run both, so I went ahead and set up Python 3. 
 
 >>2) I use Python 2 more often, as more packages are available and there are supposedly more users, and there is more Python 2 code out there. 
-However, I am trying to remember to put my print statements in ()'s though for compatibility. And I should look up whatother issues can be readily solved by typing habit.  
+However, I am making an effort to remember to preserve compatability if possible, such as put my print statements in ()'s. 
 Also, I have found that when following some tutorials, that Python 2 or 3 may be required, this includes using other people's iPython notebooks.
  
 ###Q2. Which Python Version Installed   
