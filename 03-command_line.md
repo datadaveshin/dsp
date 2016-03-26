@@ -209,4 +209,5 @@ with <cmd>V and you will then have changed to the same directory
 as the directory that you ran the command in:
 
 > > \#!/bin/sh
+
 > > echo cd `pwd | xargs` | xargs | pbcopy
