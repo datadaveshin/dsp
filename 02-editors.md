@@ -82,6 +82,8 @@ What graphical editor will you use? How did you make your decision? What are som
  
 >>5) Sublime text is pretty customizable: 
 >>a) There are settings you can change with text files, you can open it up from the menu, or just go here: /Users/<yourusername>/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings for sublime text 3 running on OS X 10.11. 
+
 >>b) Keybindings you can add yourself. 
+
 >>c) Plugins.    
  
