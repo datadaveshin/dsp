@@ -208,4 +208,4 @@ What does `xargs` do? Give an example of how to use it.
 
 > > `#!/bin/sh`
 
-> > `echo cd \``pwd | xargs\`` | xargs | pbcopy`
+> > ``echo cd `pwd | xargs` | xargs | pbcopy``
