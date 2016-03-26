@@ -210,4 +210,4 @@ as the directory that you ran the command in:
 
 > > \#!/bin/sh
 
-> > echo cd `pwd | xargs` | xargs | pbcopy
+> > echo cd \`pwd | xargs\` | xargs | pbcopy
