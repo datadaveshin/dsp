@@ -75,7 +75,7 @@ What graphical editor will you use? How did you make your decision? What are som
   
 >> 3)  What I like best (but don't know if it's a feature on the others), is being able to split the screen on the same file. That's pretty key for me.
   
-4) These are pretty basic, but helpful:
+>>4) These are pretty basic, but helpful:
 `<ctrl><cmd><up/down>` to move blocks of selected text up and down,
 `<cmd></>` to comment/uncomment lines,
 `<cmd><]>` and `<cmd><[>` to shift blocks of code right and left.
