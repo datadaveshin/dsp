@@ -108,7 +108,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > 13) env
 > > Show's what's in my environment.
 
-> > 14)export TESTING='1,2,3'
+> > 14) export TESTING='1,2,3'
 > > echo $TESTING
 
 > > How to set a an env variable in the bash shell.
