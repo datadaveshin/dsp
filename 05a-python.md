@@ -41,6 +41,25 @@ How are Python lists and sets similar and different? Give examples of using both
 `In [10]: myset`
 `Out[10]: {1, 2, 3}` 
 
+>> Both are iterable:
+`In [6]: print [x ** 2 for x in mylist]`
+`[1, 4, 4, 9]`
+
+`In [7]: print [x ** 2 for x in myset]`
+`[1, 4, 9]`
+
+>> Finding whether an item is in a set is supposedly quicker than a list.
+>> This is because for a set, apparently a hash table is searched, 
+>> whereas for a list, you iterate over every item. 
+>> Performance varies depending on the task though.
+>> Found this interesting for this comparison:
+
+
+`In [45]: In [42]: timeit.timeit('myset = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}  ; 2 in myset', number = 100000)`
+`Out[45]: 0.04457902908325195`
+
+`In [46]: In [41]: timeit.timeit('mylst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]  ; 2 in mylst', number = 100000)
+`Out[46]: 0.024330854415893555`
 ---
 
 ###Q3. Lambda Function
