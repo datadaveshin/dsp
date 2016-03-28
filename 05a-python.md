@@ -42,6 +42,7 @@ How are Python lists and sets similar and different? Give examples of using both
 `Out[10]: {1, 2, 3}` 
 
 >> Both are iterable:
+
 `In [6]: print [x ** 2 for x in mylist]`
 `[1, 4, 4, 9]`
 
@@ -60,6 +61,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 `In [46]: In [41]: timeit.timeit('mylst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]  ; 2 in mylst', number = 100000)`
 `Out[46]: 0.024330854415893555`
+
 ---
 
 ###Q3. Lambda Function
