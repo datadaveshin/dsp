@@ -76,12 +76,14 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
   `....: `
 
 `In [28]: print square_it(7)`
+
 `49`
 
 >> Using a lambda function the whole process would be:
 
-`In [30]: print (lambda x: x**2)(7)
-49`
+`In [30]: print (lambda x: x**2)(7)`
+
+`49`
 
 ---
 
