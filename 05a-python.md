@@ -162,7 +162,8 @@ Out[36]: 5
 >> we can sort by length of the name of each animal.
 ```
 In [49]: animals = ['aardvark', 'pig', 'chicken', 'snuffleupagus', 'wombat', 'triceratops', 'ox', 'hippopotamus', 'duck', 'zebra', 'groundhog', 'rhinoceros']
-
+```
+```
 In [50]: sorted(animals)
 Out[50]: 
 ['aardvark',
