@@ -101,6 +101,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> this could be accomplished on one line.
 
 >> 3) Lambda functions are used for higher order functions:
+
 >> Example: 
 
 ```
