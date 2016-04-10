@@ -89,11 +89,71 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 `49`
 
 >> Lambda functions are usually used in a few situations:
->> 1) If the function is just a small function that will be used once or a few times,
+>> 1) If the function is just a small function that will be used once,
 >> it may be more convenient to just write it on one line. 
 >> This allows code readability / simplicity.
+>> Also, since the function is to be used only once,
+>> it makes no sense for it to be named.
 
+>> 2) Since a lambda function generates a function object, 
+>> you may find instances where a function is a required argument,
+>> and for simplicity and readability,
+>> this could be accomplished on one line.
 
+>> 3) Lambda functions are used for higher order functions:
+>> Example: 
+
+`
+In [21]: def double_function(f, g):
+   ....:     return lambda x: f(g(x))
+   ....: 
+
+In [22]: def add1(x):
+   ....:     return x + 1
+   ....: 
+
+In [23]: def times2(x):
+   ....:     return x * 2
+   ....: 
+
+In [24]: def square(x):
+   ....:     return x * x
+   ....: 
+
+In [25]: def minus1(x):
+   ....:     return x - 1
+   ....: 
+
+In [26]: calc1 = double_function(add1, square)
+
+In [27]: calc2 = double_function(times2, minus1)
+
+In [28]: calc3 = double_function(add1, minus1)
+
+In [29]: calc1(5)
+Out[29]: 26
+
+In [30]: calc2(5)
+Out[30]: 8
+
+In [31]: calc3(5)
+Out[31]: 5
+
+In [32]: calc1(2)
+Out[32]: 5
+
+In [33]: calc2(2)
+Out[33]: 2
+
+In [34]: calc3(2)
+Out[34]: 2
+
+In [35]: calc1(square(3))
+Out[35]: 82
+
+In [36]: calc1(calc2(2))
+Out[36]: 5
+`
 
 
 ---
