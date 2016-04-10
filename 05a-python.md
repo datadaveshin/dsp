@@ -103,7 +103,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> 3) Lambda functions are used for higher order functions:
 >> Example: 
 
-`
+```
 In [21]: def double_function(f, g):
    ....:     return lambda x: f(g(x))
    ....: 
@@ -153,7 +153,7 @@ Out[35]: 82
 
 In [36]: calc1(calc2(2))
 Out[36]: 5
-`
+```
 
 
 ---
