@@ -178,7 +178,8 @@ Out[50]:
  'triceratops',
  'wombat',
  'zebra']
-
+```
+```
 In [51]: sorted(animals, key=lambda x: len(x))
 Out[51]: 
 ['ox',
