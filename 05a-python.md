@@ -156,6 +156,44 @@ In [36]: calc1(calc2(2))
 Out[36]: 5
 ```
 
+>> Lambda function using sorted:
+>> Here, `sorted` will sort the animal list alphabetically,
+>> but with a lambda function, 
+>> we can sort by length of the name of each animal.
+```
+In [49]: animals = ['aardvark', 'pig', 'chicken', 'snuffleupagus', 'wombat', 'triceratops', 'ox', 'hippopotamus', 'duck', 'zebra', 'groundhog', 'rhinoceros']
+
+In [50]: sorted(animals)
+Out[50]: 
+['aardvark',
+ 'chicken',
+ 'duck',
+ 'groundhog',
+ 'hippopotamus',
+ 'ox',
+ 'pig',
+ 'rhinoceros',
+ 'snuffleupagus',
+ 'triceratops',
+ 'wombat',
+ 'zebra']
+
+In [51]: sorted(animals, key=lambda x: len(x))
+Out[51]: 
+['ox',
+ 'pig',
+ 'duck',
+ 'zebra',
+ 'wombat',
+ 'chicken',
+ 'aardvark',
+ 'groundhog',
+ 'rhinoceros',
+ 'triceratops',
+ 'hippopotamus',
+ 'snuffleupagus']
+```
+
 
 ---
 
