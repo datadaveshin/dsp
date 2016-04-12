@@ -237,7 +237,7 @@ print [item ** 2 for item in list1]
 
 ```
 
->> Here is the equivalent using map:
+>> Here is the equivalent using `map`:
 
 ```
 print map(lambda x: x**2, list1)
@@ -254,7 +254,7 @@ print [item for item in list1 if item % 3 == 0]
 [3, 9]
 ```
 
->> Here is the equivalent using `filter`
+>> Here is the equivalent using `filter`:
 
 ```
 print filter(lambda x: x % 3 == 0, list1)
@@ -262,7 +262,21 @@ print filter(lambda x: x % 3 == 0, list1)
 [3, 9]
 ```
 
+>> While the capabilities of list comprehension and map/filter are comparable,
+>> it has been noted that you have to watch the scope of your variables when using list comprehension.
 
+```
+x = 'I am the original x'
+print 'x:', x
+new_list = [x for x in list1]
+print 'new_list:', new_list
+print 'x:', x
+
+
+x: I am the original x
+new_list: [1, 3, 5, 7, 9]
+x: 9
+```
 
 ---
 
@@ -286,6 +300,7 @@ date_stop = '05282015'
 ```
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+
 
 c.  
 ```
