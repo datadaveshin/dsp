@@ -229,10 +229,10 @@ print square(list1)
 ```
 
 >> You can accomplish the same with:
+
 ```
 print [item ** 2 for item in list1]
-```
-```
+
 [1, 9, 25, 49, 81]
 
 ```
