@@ -308,6 +308,37 @@ new_list: [1, 3, 5, 7, 9]
 x: I am the original x
 ```
 
+>> Using map, 
+>> we would expect an inner scope for x within the function...
+>> Python2
+
+```
+in:
+x = 'I am the original x'
+print 'x:', x
+print map(lambda x: x, list1)
+print 'x:', x
+
+out:
+x: I am the original x
+[1, 3, 5, 7, 9]
+x: I am the original x
+```
+
+>> Python3
+
+```
+x = 'I am the original x'
+print('x:', x)
+print(map(lambda x: x, list1))
+print('x:', x)
+
+out:
+x: I am the original x
+<map object at 0x1024d7320>
+x: I am the original x
+```
+
 
 
 ---
