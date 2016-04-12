@@ -233,6 +233,7 @@ print square(list1)
 print [item ** 2 for item in list1]
 
 [1, 9, 25, 49, 81]
+
 ```
 
 
