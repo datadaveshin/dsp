@@ -282,8 +282,8 @@ print 'x:', x
 new_list = [x for x in list1]
 print 'new_list:', new_list
 print 'x:', x
-
-
+```
+```
 out:
 x: I am the original x
 new_list: [1, 3, 5, 7, 9]
@@ -299,7 +299,8 @@ print('x:', x)
 new_list = [x for x in list1]
 print('new_list:', new_list)
 print('x:', x)
-
+```
+```
 out:
 x: I am the original x
 new_list: [1, 3, 5, 7, 9]
