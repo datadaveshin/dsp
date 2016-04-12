@@ -216,6 +216,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> So, rather than:
 
 ```
+in:
 list1 = [1, 3, 5, 7, 9]
 def square(collection):
     squared_list = []
@@ -225,14 +226,17 @@ def square(collection):
 
 print square(list1)  
 
+out:
 [1, 9, 25, 49, 81]
 ```
 
 >> You can accomplish the same with:
 
 ```
+in:
 print [item ** 2 for item in list1]
 
+out:
 [1, 9, 25, 49, 81]
 
 ```
@@ -240,8 +244,10 @@ print [item ** 2 for item in list1]
 >> Here is the equivalent using `map`:
 
 ```
+in:
 print map(lambda x: x**2, list1)
 
+out:
 [1, 9, 25, 49, 81]
 ```
 
@@ -249,16 +255,20 @@ print map(lambda x: x**2, list1)
 >> Here we will just keep the numbers divisible by 3:
 
 ```
+in:
 print [item for item in list1 if item % 3 == 0]
 
+out:
 [3, 9]
 ```
 
 >> Here is the equivalent using `filter`:
 
 ```
+in:
 print filter(lambda x: x % 3 == 0, list1)
 
+out:
 [3, 9]
 ```
 
@@ -266,6 +276,7 @@ print filter(lambda x: x % 3 == 0, list1)
 >> it has been noted that you have to watch the scope of your variables when using list comprehension.
 
 ```
+in:
 x = 'I am the original x'
 print 'x:', x
 new_list = [x for x in list1]
@@ -273,6 +284,7 @@ print 'new_list:', new_list
 print 'x:', x
 
 
+out:
 x: I am the original x
 new_list: [1, 3, 5, 7, 9]
 x: 9
