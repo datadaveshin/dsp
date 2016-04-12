@@ -164,7 +164,7 @@ Out[36]: 5
 In [49]: animals = ['aardvark', 'pig', 'chicken', 'snuffleupagus', 'wombat', 'triceratops', 'ox', 'hippopotamus', 'duck', 'zebra', 'groundhog', 'rhinoceros']
 ```
 ```
-In [50]: sorted(animals)
+In [50]: sorted(animals) # Sorts by alphabetical order - default
 Out[50]: 
 ['aardvark',
  'chicken',
@@ -180,7 +180,7 @@ Out[50]:
  'zebra']
 ```
 ```
-In [51]: sorted(animals, key=lambda x: len(x))
+In [51]: sorted(animals, key=lambda x: len(x)) # Sorts by length
 Out[51]: 
 ['ox',
  'pig',
@@ -203,7 +203,23 @@ Out[51]:
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a way of generating a list from an iterable 
+>> (a collection of items - such as a list, set, string, dictionary).
+>> While generating the new list, you can manipulate each element that is placed in the new list.
+>> So, rather than:
+
+```
+list1 = [1, 3, 5, 7, 9]
+def square(collection):
+    squared_list = []
+    for item in collection:
+        squared_list.append(item * 2)
+    return squared_list
+
+print square(list1)  
+
+[2, 6, 10, 14, 18]
+```
 
 ---
 
