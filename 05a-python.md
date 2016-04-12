@@ -237,6 +237,32 @@ print [item ** 2 for item in list1]
 
 ```
 
+>> Here is the equivalent using map:
+
+```
+print map(lambda x: x**2, list1)
+
+[1, 9, 25, 49, 81]
+```
+
+>> Here is an example of inclusion/exclusion.
+>> Here we will just keep the numbers divisible by 3:
+
+```
+print [item for item in list1 if item % 3 == 0]
+
+[3, 9]
+```
+
+>> Here is the equivalent using `filter`
+
+```
+print filter(lambda x: x % 3 == 0, list1)
+
+[3, 9]
+```
+
+
 
 ---
 
