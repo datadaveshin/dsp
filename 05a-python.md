@@ -205,7 +205,14 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehensions are a way of generating a list from an iterable 
 >> (a collection of items - such as a list, set, string, dictionary).
->> While generating the new list, you can manipulate each element that is placed in the new list.
+>> While generating the new list, 
+>> you can manipulate each element that is placed in the new list,
+>> or you can conditionally include or exclude items.
+>> List comprehension basically replaces making a function or a method,
+>> that includes a for loop. Once you are used to list comprehensions,
+>> you can often save space. 
+
+
 >> So, rather than:
 
 ```
@@ -213,13 +220,21 @@ list1 = [1, 3, 5, 7, 9]
 def square(collection):
     squared_list = []
     for item in collection:
-        squared_list.append(item * 2)
+        squared_list.append(item ** 2)
     return squared_list
 
 print square(list1)  
 
-[2, 6, 10, 14, 18]
+[1, 9, 25, 49, 81]
 ```
+
+>> You can accomplish the same with:
+```
+print [item ** 2 for item in list1]
+
+[1, 9, 25, 49, 81]
+```
+
 
 ---
 
