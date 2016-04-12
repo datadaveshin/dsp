@@ -275,6 +275,7 @@ out:
 >> While the capabilities of list comprehension and map/filter are comparable,
 >> it has been noted that you have to watch the scope of your variables when using list comprehension.
 >> Python 2 example:
+
 ```
 in:
 x = 'I am the original x'
