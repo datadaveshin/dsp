@@ -274,7 +274,7 @@ out:
 
 >> While the capabilities of list comprehension and map/filter are comparable,
 >> it has been noted that you have to watch the scope of your variables when using list comprehension.
-
+>> Python 2 example:
 ```
 in:
 x = 'I am the original x'
@@ -289,6 +289,24 @@ x: I am the original x
 new_list: [1, 3, 5, 7, 9]
 x: 9
 ```
+
+>> Python 3 example:
+
+```
+in:
+x = 'I am the original x'
+print('x:', x)
+new_list = [x for x in list1]
+print('new_list:', new_list)
+print('x:', x)
+
+out:
+x: I am the original x
+new_list: [1, 3, 5, 7, 9]
+x: I am the original x
+```
+
+
 
 ---
 
