@@ -61,7 +61,6 @@ def both_ends(s):
 # print both_ends('a')
 # print both_ends('xyz')
 
-
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -84,10 +83,10 @@ def fix_start(s):
     # raise NotImplementedError
 
 # Tests:
-print fix_start('babble')
-print fix_start('aardvark')
-print fix_start('google')
-print fix_start('donut')
+# print fix_start('babble')
+# print fix_start('aardvark')
+# print fix_start('google')
+# print fix_start('donut')
 
 def mix_up(a, b):
     """
