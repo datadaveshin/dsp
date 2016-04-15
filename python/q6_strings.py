@@ -103,8 +103,14 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[0:1] + a[1:] + ' ' + a[0:1] + b[1:]
+    # raise NotImplementedError
 
+# Tests:
+print mix_up('mix', 'pod')
+print mix_up('dog', 'dinner')
+print mix_up('gnash', 'sport')
+print mix_up('pezzy', 'firm')
 
 def verbing(s):
     """
