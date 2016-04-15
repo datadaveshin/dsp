@@ -77,9 +77,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    input_word_list = list(s[1:]) # Splits original word into a list starting at the first char
-    value = ['*' if letter == s[0] else letter for letter in input_word_list]
-    return s[0] + ''.join(value)
+    # Note: list(s[1:]) splits original word into a list starting at the first char
+    return s[0] + ''.join(['*' if letter == s[0] else letter for letter in list(s[1:])])
     # raise NotImplementedError
 
 # Tests:
@@ -107,10 +106,10 @@ def mix_up(a, b):
     # raise NotImplementedError
 
 # Tests:
-print mix_up('mix', 'pod')
-print mix_up('dog', 'dinner')
-print mix_up('gnash', 'sport')
-print mix_up('pezzy', 'firm')
+# print mix_up('mix', 'pod')
+# print mix_up('dog', 'dinner')
+# print mix_up('gnash', 'sport')
+# print mix_up('pezzy', 'firm')
 
 def verbing(s):
     """
@@ -126,7 +125,19 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        return s
+    else: 
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    # raise NotImplementedError
+
+# Tests:
+# print verbing('hail')
+# print verbing('swiming')
+# print verbing('do')
 
 
 def not_bad(s):
