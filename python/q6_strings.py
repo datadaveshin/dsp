@@ -103,7 +103,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    return b[0:1] + a[1:] + ' ' + a[0:1] + b[1:]
+    return b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
     # raise NotImplementedError
 
 # Tests:
