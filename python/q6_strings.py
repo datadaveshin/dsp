@@ -157,8 +157,21 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    val_not = s.find("not")
+    val_bad = s.find("bad")
+    if val_not is not -1 and val_bad is not -1 and val_not < val_bad:
+        # s_list = s.split()
+        front = s[:val_not]
+        back = s[val_bad + 3:]
+        s = front + "good" + back
+    return s
 
+    #raise NotImplementedError
+# Tests
+print not_bad('This movie is not so bad')
+print not_bad('This dinner is not that bad!')
+print not_bad('This tea is not hot')
+print not_bad("It's bad yet not")
 
 def front_back(a, b):
     """
