@@ -168,10 +168,10 @@ def not_bad(s):
 
     #raise NotImplementedError
 # Tests
-print not_bad('This movie is not so bad')
-print not_bad('This dinner is not that bad!')
-print not_bad('This tea is not hot')
-print not_bad("It's bad yet not")
+# print not_bad('This movie is not so bad')
+# print not_bad('This dinner is not that bad!')
+# print not_bad('This tea is not hot')
+# print not_bad("It's bad yet not")
 
 def front_back(a, b):
     """
@@ -189,4 +189,24 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    pieces = []
+    for string in [a, b]:
+        if len(string) % 2 == 0:
+            front = string[:len(string)/2]
+            back = string[len(string)/2:]
+        else:
+            front = string[:len(string)/2 + 1]
+            back = string[len(string)/2 + 1:]
+        pieces.append(front)
+        pieces.append(back)
+    return pieces[0] + pieces[2] + pieces[1] + pieces[3]
+    # raise NotImplementedError
+
+# Tests:
+# print front_back('123', '456')
+# print front_back('1234', '4567')
+# print front_back('abcd', 'xy')
+# print front_back('abcde', 'xyz')
+# print front_back('Kitten', 'Donut')
+
+
